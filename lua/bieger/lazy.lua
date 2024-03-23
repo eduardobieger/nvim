@@ -11,4 +11,4 @@ if not vim.loop.fs_stat(lazypath) then
 end
 vim.opt.rtp:prepend(lazypath)
 
-require("lazy").setup("bieger.plugins")
+require("lazy").setup({{import = "bieger.plugins"}, {import = "bieger.plugins.lsp"}})
