@@ -14,3 +14,7 @@ opt.termguicolors = true
 
 -- clipboard
 opt.clipboard:append("unnamedplus")
+
+-- leader key config
+vim.g.mapleader = " "
+opt.timeoutlen = 2000
