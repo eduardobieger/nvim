@@ -37,11 +37,11 @@ return {
 
 		vim.api.nvim_set_keymap("n", "<leader>F", ":FormatWrite<CR>", { noremap = true, silent = true })
 
-    vim.cmd [[
+		vim.cmd([[
       augroup FormatAutogroup
         autocmd!
         autocmd BufWritePost * FormatWrite
       augroup END
-    ]]
+    ]])
 	end,
 }
