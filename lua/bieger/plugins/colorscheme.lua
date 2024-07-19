@@ -1,12 +1,22 @@
 return {
-  "rebelot/kanagawa.nvim",
-  lazy = false,
-  priority = 1000,
+	"drewtempelmeyer/palenight.vim",
+	lazy = false,
+	priority = 1000,
 
-  config = function()
-    vim.cmd([[colorscheme kanagawa-wave]])
-  end
+	config = function()
+		vim.cmd([[colorscheme palenight]])
+	end,
 }
+
+-- return {
+--   "rebelot/kanagawa.nvim",
+--   lazy = false,
+--   priority = 1000,
+-- 
+--   config = function()
+--     vim.cmd([[colorscheme kanagawa-wave]])
+--   end
+-- }
 
 -- return {
 -- 	"folke/tokyonight.nvim",
@@ -22,7 +32,7 @@ return {
 -- return {
 --   "olimorris/onedarkpro.nvim",
 --   priority = 1000,
-
+-- 
 --   config = function()
 --     vim.cmd([[colorscheme onedark]])
 --   end
