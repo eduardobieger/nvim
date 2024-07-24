@@ -29,8 +29,8 @@ return {
 			auto_scroll = true,
 			float_opts = {
 				border = "curved",
-				width = 100,
-				height = 20,
+				width = 200,
+				height = 40,
 				row = 5,
 				col = 30,
 				winblend = 3,
@@ -44,5 +44,14 @@ return {
 				end,
 			},
 		})
+
+    local Terminal = require("toggleterm.terminal").Terminal
+    local lazygit = Terminal:new({ cmd = "lazygit", hidden = true })
+
+    function _lazygit_toggle()
+      lazygit:toggle()
+    end
+
+    vim.api.nvim_set_keymap("n", "<leader>g", "<cmd>lua_lazygit_toggle()<CR>", { noremap = true, silent = true })
 	end,
 }
