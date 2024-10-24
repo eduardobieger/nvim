@@ -7,12 +7,19 @@ return {
 			formatters_by_ft = {
 				lua = { "stylua" },
 				python = { "black" },
-				go = { "gofumpt" },
+				go = {
+					"gofumpt",
+				},
 			},
-      format_on_save = {
-        timeout_ms = 500,
-        lsp_format = "fallback",
-      },
+			format_on_save = {
+				enabled = true,
+				timeout_ms = 500,
+				filetypes = {
+					"lua",
+					"python",
+					"go",
+				},
+			},
 		})
 	end,
 }
