@@ -1,3 +1,15 @@
+return {
+	"uloco/bluloco.nvim",
+	lazy = false,
+	priority = 1000,
+	dependencies = { "rktjmp/lush.nvim" },
+
+	config = function()
+		vim.opt.termguicolors = true
+		vim.cmd([[colorscheme bluloco]])
+	end,
+}
+
 -- return {
 -- 	"drewtempelmeyer/palenight.vim",
 -- 	lazy = false,
@@ -18,16 +30,16 @@
 -- 	end,
 -- }
 
-return {
-	"folke/tokyonight.nvim",
-	lazy = false,
-	priority = 1000,
-	opts = {},
-
-	config = function()
-		vim.cmd([[colorscheme tokyonight-moon]])
-	end,
-}
+-- return {
+-- 	"folke/tokyonight.nvim",
+-- 	lazy = false,
+-- 	priority = 1000,
+-- 	opts = {},
+--
+-- 	config = function()
+-- 		vim.cmd([[colorscheme tokyonight-moon]])
+-- 	end,
+-- }
 
 -- return {
 --   "olimorris/onedarkpro.nvim",
