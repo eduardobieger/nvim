@@ -1,14 +1,27 @@
 return {
-	"uloco/bluloco.nvim",
+	"sainnhe/gruvbox-material",
 	lazy = false,
 	priority = 1000,
-	dependencies = { "rktjmp/lush.nvim" },
 
 	config = function()
-		vim.opt.termguicolors = true
-		vim.cmd([[colorscheme bluloco]])
+		vim.g.gruvbox_material_foreground = "original"
+		vim.g.gruvbox_material_background = "soft"
+		vim.g.gruvbox_material_enable_italic = true
+		vim.cmd.colorscheme([[gruvbox-material]])
 	end,
 }
+
+-- return {
+-- 	"uloco/bluloco.nvim",
+-- 	lazy = false,
+-- 	priority = 1000,
+-- 	dependencies = { "rktjmp/lush.nvim" },
+--
+-- 	config = function()
+-- 		vim.opt.termguicolors = true
+-- 		vim.cmd([[colorscheme bluloco]])
+-- 	end,
+-- }
 
 -- return {
 -- 	"drewtempelmeyer/palenight.vim",

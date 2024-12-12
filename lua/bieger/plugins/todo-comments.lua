@@ -6,9 +6,9 @@ return {
 
 	config = function()
 		require("todo-comments").setup({
-			colors = {
-				info = "#0db9d7",
-			},
+			-- colors = {
+			-- 	info = "#0db9d7",
+			-- },
 		})
 	end,
 }
