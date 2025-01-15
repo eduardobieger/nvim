@@ -43,7 +43,7 @@ return {
 
 		avante.setup({
 			provider = "copilot",
-			auto_suggestions_provider = "copilot",
+			auto_suggestions_provider = "openai",
 		})
 	end,
 }
