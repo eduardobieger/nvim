@@ -18,3 +18,5 @@ opt.clipboard:append("unnamedplus")
 -- leader key config
 vim.g.mapleader = " "
 opt.timeoutlen = 2000
+
+vim.keymap.set("n", "<leader>h", ":noh<CR>", { noremap = true, silent = true })
