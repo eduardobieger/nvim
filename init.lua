@@ -22,4 +22,5 @@ require("lazy").setup {
   require "plugins.gitsigns",
   require "plugins.none-ls",
   require "plugins.trouble",
+  require "plugins.render-markdown",
 }
