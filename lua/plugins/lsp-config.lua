@@ -10,7 +10,7 @@ return {
     "WhoIsSethDaniel/mason-tool-installer.nvim",
 
     -- Useful status updates for LSP.
-    { "j-hui/fidget.nvim", opts = {} },
+    { "j-hui/fidget.nvim",       opts = {} },
 
     -- Allows extra capabilities provided by blink.cmp
     "saghen/blink.cmp",
@@ -233,6 +233,8 @@ return {
       tailwindcss = {},
 
       volar = {},
+
+      marksman = {},
 
       lua_ls = {
         -- cmd = { ... },
