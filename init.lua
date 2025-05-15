@@ -23,4 +23,5 @@ require("lazy").setup {
   require "plugins.none-ls",
   require "plugins.trouble",
   require "plugins.render-markdown",
+  require "plugins.nvim-dap",
 }
