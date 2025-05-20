@@ -10,7 +10,7 @@ return {
     "WhoIsSethDaniel/mason-tool-installer.nvim",
 
     -- Useful status updates for LSP.
-    { "j-hui/fidget.nvim",       opts = {} },
+    { "j-hui/fidget.nvim", opts = {} },
 
     -- Allows extra capabilities provided by blink.cmp
     "saghen/blink.cmp",
@@ -228,7 +228,42 @@ return {
         },
       },
 
-      gopls = {},
+      gopls = {
+        settings = {
+          gofumpt = true,
+          codelenses = {
+            gc_details = false,
+            generate = true,
+            regenerate_cgo = true,
+            run_govulncheck = true,
+            test = true,
+            tidy = true,
+            upgrade_dependency = true,
+            vendor = true,
+          },
+          hints = {
+            assignVariableTypes = true,
+            compositeLiteralFields = true,
+            compositeLiteralTypes = true,
+            constantValues = true,
+            functionTypeParameters = true,
+            parameterNames = true,
+            rangeVariableTypes = true,
+          },
+          analyses = {
+            fieldalignment = true,
+            nilness = true,
+            unusedparams = true,
+            unusedwrite = true,
+            useany = true,
+          },
+          usePlaceholders = true,
+          completeUnimported = true,
+          staticcheck = true,
+          directoryFilters = { "-.git", "-.vscode", "-.idea", "-.vscode-test", "-node_modules" },
+          semanticTokens = true,
+        },
+      },
 
       tailwindcss = {},
 
@@ -276,6 +311,7 @@ return {
     local ensure_installed = vim.tbl_keys(servers or {})
     vim.list_extend(ensure_installed, {
       "stylua", -- Used to format Lua code
+      "gofumpt",
     })
     require("mason-tool-installer").setup { ensure_installed = ensure_installed }
 
