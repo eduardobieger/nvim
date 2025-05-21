@@ -12,12 +12,13 @@ return {
     -- Formatters and linters for mason to install
     require("mason-null-ls").setup {
       ensure_installed = {
-        "prettier",
-        "stylua",
-        "eslint_d",
-        "shfmt",
-        "checkmake",
-        "ruff",
+        "prettier", -- TS/JS formatter
+        "stylua", -- Lua formatter
+        "eslint_d", -- TS/JS linter
+        "shfmt", -- Shell formatter
+        "checkmake", -- Makefiles linter
+        "ruff", -- Python linter and formatter
+        "gofumpt", -- Go formatter
       },
       automatic_installation = true,
     }
@@ -30,6 +31,7 @@ return {
       formatting.terraform_fmt,
       require("none-ls.formatting.ruff").with { extra_args = { "--extend-select", "I" } },
       require "none-ls.formatting.ruff_format",
+      formatting.gofumpt,
     }
 
     local augroup = vim.api.nvim_create_augroup("LspFormatting", {})
