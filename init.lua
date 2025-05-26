@@ -24,4 +24,5 @@ require("lazy").setup {
   require "plugins.trouble",
   require "plugins.render-markdown",
   require "plugins.nvim-dap",
+  require "plugins.kulala",
 }
