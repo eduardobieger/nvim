@@ -25,4 +25,6 @@ require("lazy").setup {
   require "plugins.render-markdown",
   require "plugins.nvim-dap",
   require "plugins.kulala",
+  require "plugins.copilot",
+  require "plugins.codecompanion",
 }
