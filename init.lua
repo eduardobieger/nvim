@@ -27,4 +27,5 @@ require("lazy").setup {
   require "plugins.kulala",
   -- require "plugins.copilot",
   require "plugins.codecompanion",
+  require "plugins.todo-comments",
 }
