@@ -10,7 +10,7 @@ return {
     "WhoIsSethDaniel/mason-tool-installer.nvim",
 
     -- Useful status updates for LSP.
-    { "j-hui/fidget.nvim",       opts = {} },
+    { "j-hui/fidget.nvim", opts = {} },
 
     -- Allows extra capabilities provided by blink.cmp
     "saghen/blink.cmp",
@@ -198,6 +198,12 @@ return {
       --
       -- Some languages (like typescript) have entire language plugins that can be useful:
       --    https://github.com/pmizio/typescript-tools.nvim
+
+      prismals = {
+        capabilities = {
+          documentFormattingProvider = false,
+        },
+      },
 
       ts_ls = {},
 

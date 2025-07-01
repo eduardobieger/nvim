@@ -19,6 +19,7 @@ return {
         "checkmake", -- Makefiles linter
         "ruff", -- Python linter and formatter
         "gofumpt", -- Go formatter
+        "prismals",
       },
       automatic_installation = true,
     }
@@ -32,6 +33,7 @@ return {
       require("none-ls.formatting.ruff").with { extra_args = { "--extend-select", "I" } },
       require "none-ls.formatting.ruff_format",
       formatting.gofumpt,
+      formatting.prismaFmt,
     }
 
     local augroup = vim.api.nvim_create_augroup("LspFormatting", {})
@@ -44,7 +46,12 @@ return {
             group = augroup,
             buffer = bufnr,
             callback = function()
-              vim.lsp.buf.format { async = false }
+              vim.lsp.buf.format {
+                bufnr = bufnr,
+                filter = function(format_client)
+                  return format_client.name == "null-ls"
+                end,
+              }
             end,
           })
         end
