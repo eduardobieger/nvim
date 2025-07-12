@@ -22,11 +22,23 @@
 --   end,
 -- }
 
+-- return {
+--   "rebelot/kanagawa.nvim",
+--   lazy = false,
+--   priority = 1000,
+--   config = function()
+--     vim.cmd.colorscheme "kanagawa-wave"
+--   end,
+-- }
+
 return {
-  "rebelot/kanagawa.nvim",
+  "sainnhe/gruvbox-material",
   lazy = false,
   priority = 1000,
   config = function()
-    vim.cmd.colorscheme "kanagawa-wave"
+    vim.g.gruvbox_material_enable_italic = true
+    vim.g.gruvbox_material_enable_bold = true
+    vim.g.gruvbox_material_background = "hard"
+    vim.cmd.colorscheme "gruvbox-material"
   end,
 }
