@@ -28,4 +28,6 @@ require("lazy").setup {
   -- require "plugins.copilot",
   require "plugins.codecompanion",
   require "plugins.todo-comments",
+  require "plugins.zen-mode",
+  require "plugins.twilight",
 }

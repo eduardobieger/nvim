@@ -13,3 +13,6 @@ vim.keymap.set("n", "<leader>sn", "<cmd>noautocmd w <CR>", opts)
 
 -- delete single character without copying into register
 vim.keymap.set("n", "x", '"_x', opts)
+
+-- toggle zenmode
+vim.keymap.set("n", "<leader>z", ":ZenMode<CR>", { desc = "Toggle ZenMode" })
