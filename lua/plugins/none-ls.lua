@@ -19,6 +19,7 @@ return {
         "checkmake", -- Makefiles linter
         "ruff", -- Python linter and formatter
         "gofumpt", -- Go formatter
+        "golangci-lint", -- Go linter
         "prismals",
       },
       automatic_installation = true,
@@ -26,6 +27,7 @@ return {
 
     local sources = {
       diagnostics.checkmake,
+      diagnostics.golangci_lint,
       formatting.prettier.with { filetypes = { "html", "json", "yaml", "markdown" } },
       formatting.stylua,
       formatting.shfmt.with { args = { "-i", "4" } },
