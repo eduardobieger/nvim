@@ -16,3 +16,9 @@ vim.keymap.set("n", "x", '"_x', opts)
 
 -- toggle zenmode
 vim.keymap.set("n", "<leader>z", ":ZenMode<CR>", { desc = "Toggle ZenMode" })
+
+vim.keymap.set("n", "<C-d>", "<C-d>zz", { desc = "move down in buffer with cursor centered" })
+vim.keymap.set("n", "<C-u>", "<C-u>zz", { desc = "move up in buffer with cursor centered" })
+
+vim.keymap.set("n", "n", "nzzzv")
+vim.keymap.set("n", "N", "Nzzzv")
