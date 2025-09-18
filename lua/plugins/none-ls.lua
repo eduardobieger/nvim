@@ -21,6 +21,7 @@ return {
         "gofumpt", -- Go formatter
         "golangci-lint", -- Go linter
         "prismals",
+        "svelte",
       },
       automatic_installation = true,
     }
