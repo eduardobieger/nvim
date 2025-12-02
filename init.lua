@@ -26,6 +26,4 @@ require("lazy").setup {
   require "plugins.nvim-dap",
   require "plugins.codecompanion",
   require "plugins.todo-comments",
-  require "plugins.zen-mode",
-  require "plugins.twilight",
 }
