@@ -20,7 +20,6 @@ return {
         "ruff", -- Python linter and formatter
         "gofumpt", -- Go formatter
         "golangci-lint", -- Go linter
-        "prismals",
         "svelte",
       },
       automatic_installation = true,
