@@ -35,7 +35,6 @@ return {
       require("none-ls.formatting.ruff").with { extra_args = { "--extend-select", "I" } },
       require "none-ls.formatting.ruff_format",
       formatting.gofumpt,
-      formatting.prismaFmt,
     }
 
     local augroup = vim.api.nvim_create_augroup("LspFormatting", {})
