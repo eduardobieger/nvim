@@ -1,16 +1,11 @@
 return {
-  "EdenEast/nightfox.nvim",
+  "oxfist/night-owl.nvim",
   lazy = false,
   priority = 1000,
   config = function()
-    require("nightfox").setup {
-      options = {
-        transparent = true,
-        styles = {
-          comments = "italic",
-        },
-      },
+    require("night-owl").setup {
+      transparent_background = true,
     }
-    vim.cmd.colorscheme "nordfox"
+    vim.cmd.colorscheme "night-owl"
   end,
 }
