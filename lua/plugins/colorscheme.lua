@@ -1,11 +1,16 @@
 return {
-  "oxfist/night-owl.nvim",
+  "folke/tokyonight.nvim",
   lazy = false,
   priority = 1000,
+  opts = {},
   config = function()
-    require("night-owl").setup {
-      transparent_background = true,
+    require("tokyonight").setup {
+      transparent = true,
+      styles = {
+        sidebars = "transparent",
+        floats = "transparent",
+      },
     }
-    vim.cmd.colorscheme "night-owl"
+    vim.cmd.colorscheme "tokyonight-storm"
   end,
 }
