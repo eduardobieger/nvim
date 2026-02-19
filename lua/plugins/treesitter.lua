@@ -61,9 +61,6 @@ return {
         "fennel",
         "scheme",
         "racket",
-        -- Markup
-        "latex",
-        "org",
         -- Shell
         "fish",
         "nu",
