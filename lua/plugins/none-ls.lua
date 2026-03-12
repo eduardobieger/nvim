@@ -28,7 +28,18 @@ return {
     local sources = {
       diagnostics.checkmake,
       diagnostics.golangci_lint,
-      formatting.prettier.with { filetypes = { "html", "json", "yaml", "markdown" } },
+      formatting.prettier.with {
+        filetypes = {
+          "html",
+          "json",
+          "yaml",
+          "markdown",
+          "javascript",
+          "typescript",
+          "javascriptreact",
+          "typescriptreact",
+        },
+      },
       formatting.stylua,
       formatting.shfmt.with { args = { "-i", "4" } },
       formatting.terraform_fmt,
